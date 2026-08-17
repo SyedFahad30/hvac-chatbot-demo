@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clermont Air &amp; Heat — Live Deployment Demo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #2b2b2b; background: #fff; }
+
+  .demo-banner {
+    background: #2b2b2b; color: #f5c99b; text-align: center;
+    padding: 10px 16px; font-size: 13px;
+  }
+  .demo-banner strong { color: #c1440e; }
+
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 40px; border-bottom: 4px solid #c1440e; flex-wrap: wrap; gap: 12px;
+  }
+  .logo-block { display: flex; align-items: center; gap: 14px; }
+  .logo-badge {
+    width: 54px; height: 54px; background: #c1440e; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 8px; font-weight: bold; font-size: 20px;
+  }
+  .biz-name { font-size: 22px; color: #2b2b2b; font-weight: bold; }
+  .biz-tagline { font-size: 12px; color: #6b6b63; margin-top: 2px; }
+  .top-contact { text-align: right; font-size: 13px; color: #444; line-height: 1.6; }
+  .top-contact .phone { color: #c1440e; font-weight: bold; font-size: 18px; }
+
+  .hero {
+    background: linear-gradient(rgba(30,30,30,0.65), rgba(30,30,30,0.65)),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400"><rect width="800" height="400" fill="%23444"/></svg>');
+    background-size: cover; color: #fff; padding: 80px 40px; text-align: center;
+  }
+  .hero h1 { font-size: 32px; margin-bottom: 12px; }
+  .hero p { font-size: 15px; opacity: 0.9; }
+  .hero .cta { display: inline-block; margin-top: 20px; background: #c1440e; color: #fff;
+    padding: 12px 28px; border-radius: 6px; font-weight: bold; text-decoration: none; }
+
+  .services { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 50px 20px; }
+  .service-card { max-width: 220px; text-align: center; }
+  .service-card .label { font-size: 12px; letter-spacing: 0.08em; color: #c1440e; font-weight: bold; margin-bottom: 8px; }
+  .service-card .value { font-size: 14px; color: #2b2b2b; line-height: 1.5; }
+
+  .area { background: #f5efe8; padding: 40px 20px; text-align: center; }
+  .area h2 { font-size: 18px; color: #2b2b2b; margin-bottom: 10px; font-weight: normal; }
+  .area p { font-size: 13px; color: #555; }
+
+  footer { background: #1b1b1b; color: #d9d0c3; padding: 34px 40px; font-size: 12px; text-align: center; }
+  footer .tag { color: #c1440e; font-size: 15px; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">
+  <strong>LIVE DEPLOYMENT DEMO</strong> — this page loads the real hvac-chat-widget.js, calling the deployed AWS backend (API Gateway → Lambda → Anthropic + DynamoDB + S3).
+</div>
+
+<div class="topbar">
+  <div class="logo-block">
+    <div class="logo-badge">CA</div>
+    <div>
+      <div class="biz-name">Clermont Air &amp; Heat</div>
+      <div class="biz-tagline">Residential HVAC — Repair, Install, Maintenance</div>
+    </div>
+  </div>
+  <div class="top-contact">
+    <div class="phone">(352) 555-0142</div>
+    <div>Serving Clermont &amp; Lake County, FL</div>
+    <div>Mon–Sat: 7:00 AM – 7:00 PM</div>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>Fast, Honest HVAC Service in Clermont</h1>
+  <p>Same-day emergency service. Free replacement estimates.</p>
+  <a class="cta" href="#">Schedule Service</a>
+</div>
+
+<div class="services">
+  <div class="service-card">
+    <div class="label">AC REPAIR &amp; INSTALL</div>
+    <div class="value">Same-day diagnostics, upfront pricing, financing available</div>
+  </div>
+  <div class="service-card">
+    <div class="label">HEATING</div>
+    <div class="value">Furnace &amp; heat pump repair, seasonal tune-ups</div>
+  </div>
+  <div class="service-card">
+    <div class="label">MAINTENANCE PLANS</div>
+    <div class="value">Keep your system running efficiently year-round</div>
+  </div>
+</div>
+
+<div class="area">
+  <h2>Service Area</h2>
+  <p>Clermont, Minneola, Winter Garden, Groveland, and surrounding Lake County FL</p>
+</div>
+
+<footer>
+  <div class="tag">CLERMONT AIR &amp; HEAT</div>
+  <div>(352) 555-0142 &nbsp;|&nbsp; Licensed &amp; Insured &nbsp;|&nbsp; Free Estimates</div>
+</footer>
+
+<script src="hvac-chat-widget.js"></script>
+
+</body>
+</html>

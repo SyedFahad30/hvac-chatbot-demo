@@ -1,0 +1,8 @@
+config-hvac.env
+*.xlsx
+*.bak
+build/
+hvac-build/
+function.zip
+
+*.zip
