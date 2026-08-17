@@ -65,6 +65,11 @@ TWILIO_AUTH_TOKEN=your_auth_token_here
 TWILIO_PHONE_NUMBER=+13525551234
 ```
 
+### Live DEMO
+
+Live demo site: https://dg4vkgvbnrmqi.cloudfront.net
+Staff dashboard: https://dg4vkgvbnrmqi.cloudfront.net/dashboard.html
+
 Then redeploy so the Lambda picks up these new environment variables:
 
 ```powershell
